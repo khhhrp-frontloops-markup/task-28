@@ -1,15 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.scss">
-  <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
-  <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
-  <title>task-00</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.scss" />
+    <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
+    <title>task-28</title>
+  </head>
+  <body>
+    <svg width="0" height="0" class="visually-hidden">
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="caret-left"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.0303 7.46967C14.3232 7.76256 14.3232 8.23744 14.0303 8.53033L10.5607 12L14.0303 15.4697C14.3232 15.7626 14.3232 16.2374 14.0303 16.5303C13.7374 16.8232 13.2626 16.8232 12.9697 16.5303L8.96967 12.5303C8.67678 12.2374 8.67678 11.7626 8.96967 11.4697L12.9697 7.46967C13.2626 7.17678 13.7374 7.17678 14.0303 7.46967Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="caret-right"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M9.96967 7.46967C10.2626 7.17678 10.7374 7.17678 11.0303 7.46967L15.0303 11.4697C15.3232 11.7626 15.3232 12.2374 15.0303 12.5303L11.0303 16.5303C10.7374 16.8232 10.2626 16.8232 9.96967 16.5303C9.67678 16.2374 9.67678 15.7626 9.96967 15.4697L13.4393 12L9.96967 8.53033C9.67678 8.23744 9.67678 7.76256 9.96967 7.46967Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="internet"
+      >
+        <path
+          d="M4 15L20 15"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M4 9L20 9"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <circle
+          cx="12"
+          cy="12"
+          r="9"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></circle>
+        <path
+          d="M12.0004 20.8182L11.2862 21.5181C11.4742 21.7101 11.7317 21.8182 12.0004 21.8182C12.2691 21.8182 12.5265 21.7101 12.7146 21.5181L12.0004 20.8182ZM12.0004 3.18188L12.7146 2.48198C12.5265 2.29005 12.2691 2.18188 12.0004 2.18188C11.7317 2.18188 11.4742 2.29005 11.2861 2.48198L12.0004 3.18188ZM14.6004 12.0001C14.6004 15.1611 13.3373 18.0251 11.2862 20.1183L12.7146 21.5181C15.1173 19.0662 16.6004 15.7053 16.6004 12.0001H14.6004ZM11.2861 3.88178C13.3373 5.97501 14.6004 8.83903 14.6004 12.0001H16.6004C16.6004 8.29478 15.1173 4.93389 12.7146 2.48198L11.2861 3.88178ZM9.40039 12.0001C9.40039 8.83903 10.6634 5.97501 12.7146 3.88178L11.2861 2.48198C8.88347 4.93389 7.40039 8.29478 7.40039 12.0001H9.40039ZM12.7146 20.1183C10.6634 18.0251 9.40039 15.1611 9.40039 12.0001H7.40039C7.40039 15.7053 8.88348 19.0662 11.2862 21.5181L12.7146 20.1183Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        version="1.0"
+        id="microphone"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        enable-background="new 0 0 64 64"
+        xml:space="preserve"
+        viewBox="0 0 64 64"
+      >
+        <g>
+          <path
+            fill="currentColor"
+            d="M32,44c6.629,0,12-5.371,12-12V12c0-6.629-5.371-12-12-12S20,5.371,20,12v20C20,38.629,25.371,44,32,44z"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M52,28c-2.211,0-4,1.789-4,4c0,8.836-7.164,16-16,16s-16-7.164-16-16c0-2.211-1.789-4-4-4s-4,1.789-4,4
+		c0,11.887,8.656,21.73,20,23.641V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-4.359C47.344,53.73,56,43.887,56,32
+		C56,29.789,54.211,28,52,28z"
+          ></path>
+        </g>
+      </symbol>
+      <symbol
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="-0.5 0 8 8"
+        id="play"
+      >
+        <title>play [#1001]</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <g
+            id="Dribbble-Light-Preview"
+            transform="translate(-427.000000, -3765.000000)"
+            fill="currentColor"
+          >
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+              <polygon
+                id="play-[#1001]"
+                points="371 3605 371 3613 378 3609"
+              ></polygon>
+            </g>
+          </g>
+        </g>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="table"
+      >
+        <path
+          d="M10 17H9.2C8.07989 17 7.51984 17 7.09202 16.782C6.71569 16.5903 6.40973 16.2843 6.21799 15.908C6 15.4802 6 14.9201 6 13.8V11C6 11.9319 6 12.3978 6.15224 12.7654C6.35523 13.2554 6.74458 13.6448 7.23463 13.8478C7.60218 14 8.06812 14 9 14M3 8H21M12 11H18M13 14H18M6.2 20H17.8C18.9201 20 19.4802 20 19.908 19.782C20.2843 19.5903 20.5903 19.2843 20.782 18.908C21 18.4802 21 17.9201 21 16.8V7.2C21 6.0799 21 5.51984 20.782 5.09202C20.5903 4.71569 20.2843 4.40973 19.908 4.21799C19.4802 4 18.9201 4 17.8 4H6.2C5.0799 4 4.51984 4 4.09202 4.21799C3.71569 4.40973 3.40973 4.71569 3.21799 5.09202C3 5.51984 3 6.07989 3 7.2V16.8C3 17.9201 3 18.4802 3.21799 18.908C3.40973 19.2843 3.71569 19.5903 4.09202 19.782C4.51984 20 5.07989 20 6.2 20Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+    </svg>
+    <div class="app">
+      <header class="app__header">
+        <div class="app__header-content">
+          <h1 class="app__header-title">gaming</h1>
+          <h2 class="app__header-subtitle">awesome e3 news</h2>
+        </div>
+        <button type="button" class="main-btn">follow</button>
+      </header>
+      <div class="app__main">
+        <div class="screen">
+          <img src="./src/img/screenshot.avif" alt="screen" />
+          <button type="button" class="screen__btn">
+            <svg class="icon icon--18">
+              <use href="#play"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="app__inner">
+          <div class="app__content">
+            <h2 class="app__content-title">Horizon zero dawn</h2>
+            <h3 class="app__content-subtitle">Watch PS4 exclusive</h3>
+            <p class="app__content-text">
+              Sony Interactive Entertainment showcased the E3 demo of Horizon
+              Zero Dawn during its press conference, but it was shown with the
+              most of the elemnts of the HUD turned off. Sony Interactive
+              Entertainment showcased the E3 demo of Horizon Zero Dawn during
+              its press conference, but it was shown with the most of the
+              elemnts of the HUD turned off. Sony Interactive Entertainment
+              showcased the E3 demo of Horizon Zero Dawn during its press
+              conference, but it was shown with the most of the elemnts of the
+              HUD turned off. Sony Interactive Entertainment showcased the E3
+              demo of Horizon Zero Dawn during its press conference, but it was
+              shown with the most of the elemnts of the HUD turned off. Sony
+              Interactive Entertainment showcased the E3 demo of Horizon Zero
+              Dawn during its press conference, but it was shown with the most
+              of the elemnts of the HUD turned off. Sony Interactive
+              Entertainment showcased the E3 demo of Horizon Zero Dawn during
+              its press conference, but it was shown with the most of the
+              elemnts of the HUD turned off.
+            </p>
+          </div>
+          <button type="button" class="main-btn app__btn">READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <!-- <svg class="icon icon--20">
+      <use href="#caret-left"></use>
+    </svg>
+    <svg class="icon icon--20">
+      <use href="#caret-right"></use>
+    </svg>
+    <svg class="icon icon--20">
+      <use href="#internet"></use>
+    </svg>
+    <svg class="icon icon--20">
+      <use href="#microphone"></use>
+    </svg>
+    <svg class="icon icon--20">
+      <use href="#play"></use>
+    </svg>
+    <svg class="icon icon--20">
+      <use href="#table"></use>
+    </svg> -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
