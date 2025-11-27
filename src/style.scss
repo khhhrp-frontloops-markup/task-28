@@ -114,13 +114,23 @@ $icon-sizes: 18, 25, 30;
   border-radius: 0.4rem;
   overflow: hidden;
 
+  @media (width <= 576px) {
+    padding-inline: 2rem;
+  }
+
   &__header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 2rem;
     padding-top: 4.4rem;
     padding-bottom: 3.4rem;
+
+    @media (width <= 576px) {
+      padding-top: 2.4rem;
+      padding-bottom: 1.4rem;
+    }
   }
 
   &__header-title {
@@ -149,6 +159,18 @@ $icon-sizes: 18, 25, 30;
     padding-bottom: 4.4rem;
     margin-bottom: 4rem;
     border-bottom: 0.1rem solid rgba($gray--700, 0.6);
+
+    @media (width <= 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 22rem 30rem;
+      row-gap: 3rem;
+    }
+
+    @media (width <= 576px) {
+      row-gap: 2.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2.4rem;
+    }
   }
 
   &__inner {
@@ -205,7 +227,6 @@ $icon-sizes: 18, 25, 30;
 .screen {
   position: relative;
   aspect-ratio: 4 / 3;
-  border-image: fill 0 linear-gradient(#0003, #000);
   box-shadow: 0 3.5rem 2rem -2rem rgba($dark, 0.6);
   height: 100%;
 
@@ -213,8 +234,13 @@ $icon-sizes: 18, 25, 30;
     content: "";
     position: absolute;
     inset: 0;
-    border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    border-image: fill 0 linear-gradient(rgba($dark, 0.1), rgba($dark, 0.7));
     z-index: 1;
+  }
+
+  @media (width <= 768px) {
+    width: 100%;
+    aspect-ratio: auto;
   }
 
   img {
@@ -312,12 +338,15 @@ $icon-sizes: 18, 25, 30;
 .nav {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   column-gap: 3rem;
   row-gap: 1rem;
+  overflow-x: auto;
+  mask-image: linear-gradient(to right, $dark 90%, transparent);
+  mask-repeat: no-repeat;
 
   &__btn {
     font-family: inherit;
+    flex-shrink: 0;
     background-color: transparent;
     border: none;
     position: relative;
@@ -385,7 +414,8 @@ $icon-sizes: 18, 25, 30;
   display: grid;
   grid-template-columns: 1fr min-content;
   align-items: center;
-  gap: 3rem;
+  column-gap: 2rem;
+  row-gap: 1rem;
   min-height: 8rem;
   background-color: $purple--900;
   margin-inline: -4.4rem;
@@ -394,9 +424,22 @@ $icon-sizes: 18, 25, 30;
   box-shadow: 0 0 2rem 0 rgba($dark, 0.5);
   z-index: 1;
 
+  @media (width <= 576px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-inline: 0;
+    margin-inline: -2rem;
+  }
+
   &__nav {
     display: flex;
     overflow-x: auto;
+    mask-image: linear-gradient(to right, #000 85%, transparent);
+    mask-repeat: no-repeat;
+
+    @media (width <= 576px) {
+      grid-row: 2 / 3;
+    }
   }
 
   &__btn {
@@ -420,6 +463,10 @@ $icon-sizes: 18, 25, 30;
         background-color: $purple--700;
       }
     }
+
+    @media (width <= 576px) {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -432,4 +479,9 @@ $icon-sizes: 18, 25, 30;
   border-radius: 2.5rem;
   border: 0.1rem solid $gray--700;
   color: $light;
+
+  @media (width <= 576px) {
+    width: 90%;
+    margin-inline: auto;
+  }
 }
